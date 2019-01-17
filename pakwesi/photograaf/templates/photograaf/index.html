@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+{% load staticfiles google_analytics_tags %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Pakwesi Infornie</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'images/28.png'%}">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <!-- owl theme CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.theme.css'%}">
+    <!-- Pagepiling CSS -->
+    <link rel="stylesheet" href="{% static 'css/jquery.pagepiling.css'%}" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <!-- font-awesome CSS -->
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css'%}">
+    <!-- styles for this template -->
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css'%}"> -->
+    <link rel="stylesheet" href="{% static 'css/pakwesi_style.css'%}">
+    <!-- Google fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unna:400,700" rel="stylesheet">
+
+    <style media="screen">
+      #lionhero .item .slide {
+          height: 100vh;
+      }
+
+      #lionhero .slide.one {
+          background: url("{% static 'images/slider/bg_2.jpg' %}") 48% 48%;
+          background-size: cover;
+      }
+
+      #lionhero .slide.two {
+          background: url("{% static 'images/slider/bg_1.jpg' %}") 48% 48%;
+          background-size: cover;
+      }
+
+      #lionhero .slide.three {
+          background: url("{% static 'images/slider/bg_3.jpg' %}") 48% 48%;
+          background-size: cover;
+      }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- Preloader Section -->
+    <div id="loader-wrapper">
+        <div class="load-content">
+            <img src="{% static 'images/28.png'%}" alt="">
+            <span>Wacht AUB...</span>
+        </div>
+    </div>
+    <!-- Preloader Section End -->
+    <!--     Full Container start  -->
+    <div class="container-fluid nopadding">
+        <div class="row nopadding">
+            <!-- Header start  -->
+            <div class="col-md-1 col-sm-1 col-xs-12 header nopadding text-center">
+                <!--     Logo start  -->
+                <div class="logo">
+                    <a href="#website-maken-fotograaf-rotterdam-noord"><img class="" src="{% static 'images/28.png'%}" alt="">
+                        <h2>Pakwesi</h2></a>
+                </div>
+                <!--     logo end  -->
+                <div class="menu_icon" id="mynav">
+                    <p onclick="openNav()">&#9776;</p>
+                </div>
+                <!--     sidenav start  -->
+                <div id="mySidenav" class="sidenav">
+                    <div class="sidenav_left">
+                        <!--     Logo start  -->
+                        <div class="logo_over hidden-xs">
+                            <a href="#website-maken-fotograaf-rotterdam-noord"><img src="{% static 'images/28.png'%}" alt="">
+                                <h2>Pakwesi</h2></a>
+                        </div>
+                        <!--     Logo end  -->
+                        <!--   menu start  -->
+                        <ul id="menu">
+                            <li data-menuanchor="website-maken-fotograaf-rotterdam-noord" class="active"><a onclick="closeNav()" href="#website-maken-fotograaf-rotterdam-noord">HOME</a></li>
+                            <li data-menuanchor="rotterdam-noord-fotograaf"><a onclick="closeNav()" href="#rotterdam-noord-fotograaf">PORTFOLIO</a></li>
+                            <li data-menuanchor="pakwesi-Rotterdam-noord"><a onclick="closeNav()" href="#pakwesi-Rotterdam-noord">OVER ONS</a></li>
+                            <li data-menuanchor="rotterdam-noord-website-maken"><a onclick="closeNav()" href="#rotterdam-noord-website-maken">SERVICES</a></li>
+                            <li data-menuanchor="rotterdam-noord-website-maken-prijs"><a onclick="closeNav()" href="#rotterdam-noord-website-maken-prijs">PRIJS</a></li>
+                            <li data-menuanchor="rotterdam-tech-blog"><a onclick="closeNav()" href="#rotterdam-tech-blog">BLOG</a></li>
+                            <li data-menuanchor="webdesign-contact-Rotterdam-noord"><a onclick="closeNav()" href="#webdesign-contact-Rotterdam-noord">CONACT</a></li>
+                        </ul>
+                        <!--   menu end  -->
+                        <div class="menu_close">
+                            <a href="javascript:void(0)" class="closebtn menu_icon" onclick="closeNav()">&times; Dicht</a>
+                        </div>
+                    </div>
+                    <div class="sidenav_right hidden-xs">
+                        <div class="slogan_over">
+                            <h3>Pakwesi</h3>
+                        </div>
+                    </div>
+                </div>
+                <!--     sidenav end  -->
+            </div>
+            <!-- Header end  -->
+            <!-- content start  -->
+            <div class="col-md-11 col-sm-11 col-xs-12 content nopadding">
+                <!-- Pagepilling start -->
+                <div id="pagepiling">
+                    <!-- Section one area start -->
+                    <div class="section" id="section1">
+                        <div id="lionhero" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="slide one"></div>
+                                <div class="welcome-text">
+                                    <p>Professionele fotoshoot</p>
+                                    <a class="btn btn-lg btn-light" href="#rotterdam-noord-website-maken">Ontdek meer <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide two"></div>
+                                <div class="welcome-text">
+                                    <p>Professionele website op maat gemaakt</p>
+                                    <a id="notify-button" class="btn btn-lg btn-light" href="#rotterdam-noord-website-maken-prijs">Ontdek meer <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slide three"></div>
+                                <div class="welcome-text">
+                                    <p>Digitale marketing</p>
+                                    <a class="btn btn-lg btn-light" href="#rotterdam-noord-website-maken">Ontdek meer <i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- more_link start -->
+                        <div class="more_link">
+                            <a href="#rotterdam-noord-fotograaf">Scroll naar beneden <br>
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                        <!-- more_link end -->
+                    </div>
+                    <!-- Section one area end -->
+                    <!-- Section two area start -->
+                    <div class="section" id="section2">
+                        <!-- intro start -->
+                        <div class="">
+                            <div class="">
+                                <div class="work_area">
+                                    <h2 class="text-center">Ons werk</h2>
+                                    <ul id="filters">
+                                        <li class="active" data-filter="*">Alles</li>
+                                        <li data-filter=".wedding">Jongens</li>
+                                        <li data-filter=".product">Meisjes</li>
+                                        <li data-filter=".nature">Kinderen</li>
+                                        <li data-filter=".wildlife">Volwassen</li>
+                                    </ul>
+                                    <div class="portfolio-container isotope" id="portfolio-container">
+                                        <!-- WORK 1 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  wedding">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Classy</h3>
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/12.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 1 END -->
+                                        <!-- WORK 2 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  product">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Be free</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/14.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 2 END -->
+                                        <!-- WORK 3 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  product">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Cute</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/15.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 3 END -->
+                                        <!-- WORK 4 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  nature">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Playful</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/20.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 4 END -->
+                                        <!-- WORK 5 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  wildlife">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Pure</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/18.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 5 END -->
+                                        <!-- WORK 6 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  wedding">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Stylish</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/13.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 6 END -->
+                                        <!-- WORK 7 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  product">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Fun</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/16.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 7 END -->
+                                        <!-- WORK 8 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  video">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Family</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/19.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 8 END -->
+                                        <!-- WORK 9 START -->
+                                        <div class="portfolio-item col-md-4  col-sm-4  wildlife">
+
+                                                <div class="portfolio-column">
+                                                    <div class="portfolio-hover ">
+                                                        <div class="portfolio-content">
+                                                            <h3>Boss</h3>
+
+                                                        </div>
+                                                        <div class="portfolio-overlay"></div>
+                                                    </div>
+                                                    <img src="{% static 'images/portfolio/17.jpg'%}" alt="">
+                                                </div>
+
+                                        </div>
+                                        <!-- WORK 9 END -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- intro end -->
+                    </div>
+                    <!-- Section two area end -->
+                    <!-- Section three area start -->
+                    <div class="section" id="section3">
+                        <!-- intro start -->
+                        <div class="intro">
+                            <div class="container-fluid nopadding">
+                                <div class="row nopadding">
+                                    <!-- about_left start -->
+                                    <div class="col-md-6 col-sm-12 col-xs-12 about_left">
+                                        <!-- about_content_top start -->
+                                        <div class="about_content_top">
+                                            <h2>Wij zijn <span>Pakwesi</span></h2>
+                                            <p>Pakwesi is een bedrijf dat zich onder andere bezighoudt met fotgrafie, webdesign en digitale marketing. U kunt bij ons terecht voor professionele fotoshoots, voor het promoten van uw online producten/diensten en voor mooie, op maat gemaakte websites. Wij verrichten ons werk met veel passie, plezier en zorgvuldigheid. </p>
+                                        </div>
+                                        <!-- about_content_top end -->
+                                        <!-- about_content_bottom start -->
+                                        <div class="about_content_bottom">
+                                            <h1>10</h1>
+                                            <p>Jaar
+                                                <br>Sector
+                                                <br>Ervaring</p>
+                                        </div>
+                                        <div class="col-md-12 col-xs-12 nopadding">
+                                            <h3 class="progress-title">Fotoshoot - Poster - Flyer</h3>
+                                            <div class="progress barcolor">
+                                                <div class="progress-bar" style="width: 98%;">
+                                                    <div class="progress-value">98%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-xs-12 nopadding">
+                                            <h3 class="progress-title">Digitale marketing</h3>
+                                            <div class="progress barcolor">
+                                                <div class="progress-bar" style="width: 95%;">
+                                                    <div class="progress-value">95%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-xs-12 nopadding">
+                                            <h3 class="progress-title">Webdesign</h3>
+                                            <div class="progress barcolor">
+                                                <div class="progress-bar" style="width: 100%;">
+                                                    <div class="progress-value">100%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- about_content_bottom end -->
+                                    </div>
+                                    <!-- about_left end -->
+                                    <!-- about_right start -->
+                                    <div class="col-md-6 col-sm-12 col-xs-12 about_right nopadding">
+                                        <img src="{% static 'images/21.jpg'%}" alt="">
+                                    </div>
+                                    <!-- about_right end -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- intro end -->
+                    </div>
+                    <!-- Section three area end -->
+                    <!-- Section four area start -->
+                    <div class="section" id="section4">
+                        <!-- intro start -->
+                        <div class="intro">
+                            <div class="container">
+                                <div class="row">
+                                    <!-- service area start -->
+                                    <div class="col-md-12 col-sm-12 col-xs-12 service">
+                                        <h2>Services</h2>
+                                        <ul class="nav nav-tabs">
+                                            <li class="active service_icon"><a data-toggle="tab" href="#home"><i class="fa fa-modx"></i><span>Webdesign</span></a></li>
+                                            <li class="service_icon"><a data-toggle="tab" href="#menu1"><i class="fa fa-500px"></i><span>Digitale marketing</span></a></li>
+                                            <li class="service_icon"><a data-toggle="tab" href="#menu2"><i class="fa fa-handshake-o"></i><span>Fotoshoot</span></a></li>
+                                            <!-- <li class="service_icon"><a data-toggle="tab" href="#menu3"><i class="fa fa-video-camera"></i><span>VIDEOGRAPHY</span></a></li> -->
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="home" class="tab-pane fade in active">
+                                                <p>Als u een website wilt, dan kunt u een afspraak met ons maken. Aan de hand van uw wensen maken wij een professionele website klaar voor u. U heeft vervolgens de mogelijkheid om gratis 3 aanpassingen te laten maken aan uw website. Het streven is om binnen 2 weken uw website online te plaatsen.</p>
+                                            </div>
+                                            <div id="menu1" class="tab-pane fade">
+                                                <p>Wij kunnen ervoor zorgen dat uw bedrijf beter en makkelijker te vinden is op Google. Ook kunnen wij u helpen met Google advertising. Verder kunt u bij ons terecht voor social media campagnes. Wij koppelen uw social media accounts aan uw online platform en helpen u met social media advertising. </p>
+                                            </div>
+                                            <div id="menu2" class="tab-pane fade">
+                                                <p>Wij zijn voornamelijk gespecialiseerd in het maken van kinderfoto's, denk hierbij aan fotoshoots van uw kind(eren) in de studio of het maken van foto's op kinderverjaardagen. Verder bieden wij ook fotoshoots aan voor volwassenen en kunnen wij foto's op locatie maken, bijvoorbeeld voor een babyshower of voor speciale gelegenheden.  </p>
+                                            </div>
+                                            <!-- <div id="menu3" class="tab-pane fade">
+                                                <p>Our meticulous attention to detail and expertise in colour allow us to achieve exceptional results and we back this up with the friendliest, most attentive service around. Our experience is built on a solid understanding of traditional photographic and darkroom techniques, together with the latest digital technology. </p>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!-- service area end -->
+                                    <!-- client_area start -->
+                                    <div class="col-md-12 col-sm-12 col-xs-12 client_area">
+                                        <h2>Onze tevreden klanten</h2>
+                                        <!-- owl carousel area start -->
+                                        <div id="liontestimonial" class="owl-carousel owl-theme">
+                                            <!-- owl single item start -->
+                                            <div class="item">
+                                                <div class="client_one clients">
+                                                    <img src="{% static 'images/client/24.jpeg'%}" class="img-circle" alt="Cinque Terre"><i class="quote text-right fa fa-quote-right text-right"></i>
+                                                    <h4><span>Natasha Balotje</span></h4>
+                                                    <p>Er heerste een gezellige sfeer in de studio. De foto's die ik heb gekregen zijn erg mooi geworden, omdat de fotograaf goede instructies gaf en alles uitprobeerde (verschillende poses,belichting etc.).</p>
+                                                </div>
+                                            </div>
+                                            <!-- owl single item end -->
+                                            <!-- owl single item start -->
+                                            <div class="item">
+                                                <div class="client_one clients">
+                                                    <img src="{% static 'images/client/22.jpeg'%}" class="img-circle" alt="Cinque Terre"><i class="quote text-right fa fa-quote-right text-right"></i>
+                                                    <h4><span>James Ferreia</span></h4>
+                                                    <p>De foto's van mijn zoontje zijn erg mooi geworden en ook snel geleverd. Wij zijn blij met de foto's en de topservice!</p>
+                                                </div>
+                                            </div>
+                                            <!-- owl single item end -->
+                                            <!-- owl single item start -->
+                                            <div class="item">
+                                                <div class="client_one clients">
+                                                    <img src="{% static 'images/client/23.jpeg'%}" class="img-circle" alt="Cinque Terre"><i class="quote text-right fa fa-quote-right text-right"></i>
+                                                    <h4><span>Elly Gomes</span></h4>
+                                                    <p>In het begin was mijn dochtertje een beetje verlegen, de fotograaf wist hier goed mee om te gaan. Later voelde zij zich erg op haar gemak in de studio wat uiteindelijk mooie, leuke en grappige foto's opleverde.  </p>
+                                                </div>
+                                            </div>
+                                            <!-- owl single item end -->
+                                            <!-- owl single item start -->
+                                            <div class="item">
+                                                <div class="client_one clients">
+                                                    <img src="{% static 'images/client/25.jpeg'%}" class="img-circle" alt="Cinque Terre"><i class="quote text-right fa fa-quote-right text-right"></i>
+                                                    <h4><span>Irene Specht </span></h4>
+                                                    <p>Ik ben met mijn zoontje geweest voor een fotoshoot. Wat ik fijn vond aan de fotograaf is dat hij tijdens de fotoshoot veel tips gaf aan mijn zoontje waardoor we veelzijdige en leuke foto's hebben gekregen. </p>
+                                                </div>
+                                            </div>
+                                            <!-- owl single item end -->
+                                            <!-- owl single item start -->
+                                            <div class="item">
+                                                <div class="client_one clients">
+                                                    <img src="{% static 'images/client/26.jpeg'%}" class="img-circle" alt="Cinque Terre"><i class="quote text-right fa fa-quote-right text-right"></i>
+                                                    <h4><span>Disha Queba</span></h4>
+                                                    <p>Ik heb foto's laten maken van mijzelf en mijn 2 kinderen. De fotograaf was geduldig met mijn kinderen en nam de tijd voor ons.</p>
+                                                </div>
+                                            </div>
+                                            <!-- owl single item end -->
+                                        </div>
+                                        <!-- owl carousel area end -->
+                                    </div>
+                                    <!-- client_area end -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- intro end -->
+                    </div>
+                    <!-- Section four area end -->
+                    <!-- Section five area start -->
+                    <div class="section" id="section5">
+                        <!-- intro start -->
+                        <div class="intro">
+                            <div class="container-fluid nopadding">
+                                <div class="row nopadding">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <!-- team_top area start -->
+                                        <div class="team_top text-center">
+                                            <h2>Prijzen</h2>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 ">
+                                            <div class="price text-center">
+                                                <h4>Fotoshoot</h4>
+                                                <h3>$75</h3>
+                                                <ul>
+                                                    <li>100% tevredenheidsgarantie</li>
+                                                    <li>3 bewerkt foto's</li>
+                                                    <li>1 uur fotoshoot</li>
+                                                    <li>50 professionele foto's</li>
+                                                    <li>Op locatie </li>
+                                                    <li>1 fotograaf</li>
+                                                </ul>
+                                                <a href="#webdesign-contact-Rotterdam-noord"><button class="btn btn-default" >Maak Afspraak </button></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 ">
+                                            <div class="price text-center">
+                                                <h4>Webdesign </h4>
+                                                <h3>$350</h3>
+                                                <ul>
+                                                    <li>Mobile responsive</li>
+                                                    <li>Gebruiksvriendelijk</li>
+                                                    <li>+/- 5 pagina’s</li>
+                                                    <li>Google vriendelijk</li>
+                                                    <li>Keuze uit 5 standaard thema's</li>
+                                                    <li>Google statistieken</li>
+                                                </ul>
+                                                <a href="#webdesign-contact-Rotterdam-noord"><button class="btn btn-primary" >Maak Afspraak </button></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 ">
+                                            <div class="price text-center">
+                                                <h4>Digitale Marketing</h4>
+                                                <h3>$145</h3>
+                                                <ul>
+                                                    <li>Zoekmachine Adverteren</li>
+                                                    <li>Zoekmachine Optimalisatie</li>
+                                                    <li>Adverteren op social media</li>
+                                                    <li>E-mailmarketing</li>
+                                                    <li>Poster</li>
+                                                    <li>Logo design</li>
+                                                </ul>
+                                                <a href="#webdesign-contact-Rotterdam-noord"><button class="btn btn-default" >Maak Afspraak </button></a>
+                                            </div>
+                                        </div>
+                                        <!-- team_top area end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- intro end -->
+                    </div>
+                    <!-- Section five area end -->
+                    <!-- Section six area start -->
+                    <div class="section " id="section6">
+                        <!-- intro start -->
+                        <div class="intro">
+                            <div class="container-fluid nopadding">
+                                <div class="row nopadding ">
+                                    <!-- blog news area start -->
+                                    <div class="col-md-12 blog_news">
+                                        <!-- blog title start -->
+                                        <div class="col-md-12 blog_title">
+                                            <h2>Latest News</h2>
+                                            <a href="#rotterdam-noord-website-maken">Services <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                        </div>
+                                        <!-- blog title end -->
+                                        <!-- blog content start -->
+                                        <div class="col-md-12 blog_content">
+                                            <!-- single news area start -->
+                                            <div class="news col-md-4">
+                                                <div class="news_img">
+                                                    <img src="{{ blogmark.image_source }}" alt="Avatar" class="image img-responsive">
+                                                    <div class="overlay">
+                                                        <div class="text">
+                                                            <p>{{ blogmark.date }}</p>
+                                                            <h3>{{ blogmark.title }}</h3>
+                                                            <p>{{ blogmark.summary }}</p>
+                                                            <a href="{{ blogmark.link }}">Continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single news area end -->
+                                            <!-- single news area start -->
+                                            <div class="news col-md-4">
+                                                <div class="news_img">
+                                                    <img src="{{ blogspic.image_source }}" alt="Avatar" class="image img-responsive">
+                                                    <div class="overlay">
+                                                        <div class="text">
+                                                            <p>{{ blogspic.date}}</p>
+                                                            <h3>{{ blogspic.title }}</h3>
+                                                            <p>{{ blogspic.summary }}</p>
+                                                            <a href="{{ blogspic.link}}">Continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single news area end -->
+                                            <!-- single news area start -->
+                                            <div class="news col-md-4">
+                                                <div class="news_img">
+                                                    <img src="{{ blogs.image_source }}" alt="Avatar" class="image img-responsive">
+                                                    <div class="overlay">
+                                                        <div class="text">
+                                                            <p>{{ blogs.date }}</p>
+                                                            <h3>{{ blogs.title }}</h3>
+                                                            <p>{{ blogs.summary }}</p>
+                                                            <a href="{{ blogs.link }}">Continue <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- single news area end -->
+                                        </div>
+                                        <!-- blog content end -->
+                                    </div>
+                                    <!-- blog news area end -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- intro end -->
+                    </div>
+                    <!-- Section six area end -->
+                    <!-- Section seven area start -->
+                    <div class="section " id="section7">
+                        <!-- intro start -->
+                        <div class="intro contact">
+                            <div class="container-fluid nopadding">
+                                <div class="row nopadding ">
+                                    <div class="col-md-12 contact_form">
+                                        <h2>Contact Ons</h2>
+                                        <!-- contact form area start -->
+                                        <div class="col-md-6 col-sm-6 nopadding">
+                                            <form id="contactForm" class="shake" method="post">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            {% csrf_token%}
+                                                            {{ form.naam }} Naam
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                          {{ form.email }} Email
+                                                            <!-- <input id="email" type="email" class="form-control" name="email" autocomplete="off" placeholder="E-mail" required data-error="Please enter your email"> -->
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                          {{ form.onderwerp }} Onderwerp
+                                                            <!-- <input id="msg_subject" type="text" class="form-control" name="msg_subject" autocomplete="off" placeholder="Onderwerp" required data-error="Please enter your subject"> -->
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                          {{ form.bericht }} Bericht
+                                                            <!-- <textarea id="message" class="form-control textarea" rows="3" name="Message" placeholder="Bericht" required data-error="Please enter your message subject"></textarea> -->
+                                                            <div class="help-block with-errors"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <button id="submit" type="submit" class="btn btn-contact">Verzenden</button>
+                                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- contact form area end -->
+                                        <!-- office address area start -->
+                                        <div class="col-md-5 col-sm-6 office">
+                                            <div class="office-details">
+                                                <i class="fa fa-map-marker"></i>
+                                                <span>Pakwesi, Leeuwenbekstraat 6, <br>Zuid Holland, Rotterdam.</span>
+                                            </div>
+                                            <div class="office-details">
+                                                <i class="fa fa-phone"></i>
+                                                <i class="fa fa-whatsapp"></i>
+                                                <span><a href="tel:0626779448">0626779448</a></span>
+                                            </div>
+                                            <div class="office-details">
+                                                <i class="fa fa-envelope"></i>
+                                                <span>Pakwesiinfornie1@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <!-- office address area end -->
+                                        <!-- social icon start -->
+                                        <div class="col-md-1 col-sm-12 social_icon text-right">
+                                            <ul class="member-social">
+                                                <li><a href="https://twitter.com"><i class=" fa fa-twitter"></i></a></li>
+                                                <li><a href="https://www.facebook.com"><i class=" fa fa-facebook"></i></a></li>
+                                                <li><a href="https://www.google.com"><i class=" fa fa-google"></i></a></li>
+                                                <li><a href="https://www.linkedin.com"><i class=" fa fa-linkedin"></i></a></li>
+                                                <li><a href="https://nl.pinterest.com"><i class=" fa fa-pinterest"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- social icon end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-11">
+                                      <iframe width="1120" height="680" id="gmap_canvas" src="https://maps.google.com/maps?q=leeuwenbekstraat%2C%20rotterdam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <p>&copy; 2019. <strong>Pakwesi Infornie 1987</strong></p>
+                            </div>
+                        </div>
+                        <!-- intro end -->
+                    </div>
+                    <!-- Section seven area end -->
+                </div>
+                <!-- Pagepiling end -->
+            </div>
+            <!-- content end -->
+
+            <div style="display:none">
+                <img src="{% google_analytics %}" width="0" height="0" />
+            </div>
+        </div>
+    </div>
+
+    <!--   end:  Full Container  -->
+    <!-- Javascripts
+    ================================================== -->
+    <!-- Jquery -->
+    <script src="{% static 'js/jquery.min.js'%}"></script>
+    <!-- Contact JS -->
+    <!-- <script src="{% static 'js/form-validator.min.js'%}"></script> -->
+
+    <!-- <script type="text/javascript" src="{% static 'js/p_contact-form-script.js'%}"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <!-- Isotop JS -->
+    <script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+    <!-- owl carousel js -->
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <!-- Pagepiling JS -->
+    <script src="{% static 'js/jquery.pagepiling.min.js'%}"></script>
+    <!-- Custom functions for this template -->
+    <!-- <script src="{% static 'js/main.js'%}"></script> -->
+    <script type="text/javascript" src="{% static 'js/p_main.js'%}"></script>
+
+    <!-- push a notification -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.5/push.js"></script> -->
+    <script type="text/javascript" src="{% static 'js/push.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/push.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/serviceWorker.min.js'%}"></script>
+    <script>
+          $("#notify-button").click(function(){
+            Push.create("Welkom bij Pakwesi",{
+                body: "Nu 30% korting op een website",
+                icon: "{% static 'images/29.jpg'%}",
+                timeout: 8000,
+                onClick: function () {
+                    window.focus();
+                    this.close();
+                }
+            });
+          });
+          $("#clear-button").click(function(){
+               Push.clear();
+          });
+          $("#check-button").click(function(){
+                console.log(Push.Permission.has());
+          });
+      </script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132665795-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-132665795-1');
+      </script>
+
+</body>
+
+</html>
